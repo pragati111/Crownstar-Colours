@@ -1,0 +1,80 @@
+:root {
+  --backdrop: hsl(0 0% 60% / 0.12);
+  --radius: 14;
+  --border: 3;
+  --backup-border: var(--backdrop);
+  --size: 200;
+}
+
+.glow-card {
+  aspect-ratio: 3 / 4;
+  width: 260px;
+  padding: 1rem;
+  border-radius: 14px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  position: relative;
+  box-shadow: 0 1rem 2rem -1rem black;
+  border: 1px solid hsl(0 0% 100% / 0.15);
+  backdrop-filter: blur(6px);
+  background: #0b0b0b;
+  color: #fff;
+}
+
+/* ==== GLOW EFFECT ==== */
+[data-glow] {
+  --border-size: 3px;
+  --spotlight-size: 200px;
+  --hue: calc(210 + (var(--xp, 0) * 200));
+
+  background-image: radial-gradient(
+    var(--spotlight-size) var(--spotlight-size) at
+    calc(var(--x, 0) * 1px)
+    calc(var(--y, 0) * 1px),
+    hsl(var(--hue) 100% 70% / 0.15),
+    transparent
+  );
+
+  background-color: var(--backdrop);
+  border: var(--border-size) solid var(--backup-border);
+  position: relative;
+}
+
+[data-glow]::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  background-image: radial-gradient(
+    150px 150px at
+    calc(var(--x, 0) * 1px)
+    calc(var(--y, 0) * 1px),
+    hsl(var(--hue) 100% 60%),
+    transparent
+  );
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+.glow-card h3 {
+  color: #ff4d4d;
+  margin-bottom: 0.5rem;
+}
+
+.glow-card p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.glow-card button {
+  margin-top: auto;
+  padding: 0.6rem 1.8rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.glow-card button span {
+  font-weight: bold;
+  color: white;
+}
