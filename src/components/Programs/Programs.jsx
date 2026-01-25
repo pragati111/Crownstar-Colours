@@ -28,7 +28,6 @@ const Programs = () => {
       <div className={`programs-header ${isVisible ? 'animate-visible' : ''}`}>
         <span className='stroke-text'>Explore Our</span>
         <span>Product Range</span>
-        <span className='stroke-text'>Premium Quality Paints</span>
       </div>
       <div className="program-categories">
         {programsData.map((programs, index)=>(

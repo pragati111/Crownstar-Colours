@@ -24,10 +24,11 @@ const Hero = () => {
         <div className="hero-text">
             <div>
                 <span className='stroke-text'>Transform </span>
-                <span>Your</span>
+                <span>Your</span><br />
+                <span> Spaces</span>
             </div>
             <div>
-                <span>Spaces</span>
+                
             </div>
             <div>
                 <span>

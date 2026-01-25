@@ -9,8 +9,8 @@ const Plans = () => {
         <div className="blur plans-blur-2"></div>
       <div className="programs-header" style={{gap: '0.2rem'}}>
         <span className='stroke-text'>Professional Painting</span>
-        <span>Services & Solutions</span>
-        <span className='stroke-text'>Choose Your Perfect Plan</span>
+        <br />
+        <span>  Services & Solutions</span>
       </div>
       {/*plans card */}
       <div className="plans">

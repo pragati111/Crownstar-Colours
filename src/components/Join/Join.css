@@ -76,4 +76,8 @@
     .right-j{
         padding: 2rem;
     }
+    .email-text{
+        color: var(--primary-dark);
+        font-size:smaller
+    }
 }

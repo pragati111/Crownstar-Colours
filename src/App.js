@@ -6,15 +6,21 @@ import Plans from './components/Plans/Plans';
 import Testimonials from './components/Testimonials/Testimonials';
 import Join from './components/Join/Join';
 import Footer from './components/Footer/Footer';
+import VMV from './components/VMV/VMV';
+import LabEquipments from './components/LabEquipments/LabEquipments';
+import ProductRangeExtended from './components/ProductRangeExtended/ProductRangeExtended';
 function App() {
   return (
     <div className="App">
       <Hero />  
+      <VMV/>
       <Programs/>
+      <ProductRangeExtended/>
+      <LabEquipments/>
       <Reasons/>
-      <Plans/>
       <Join/>
       <Footer/>
+      
     </div>
   );
 }

@@ -13,11 +13,12 @@ const Footer = () => {
                 <img src={LinkedIn} alt="" />
             </div>*/}
         
-            <div className='logo-f'>
-                <img src={Logo} alt="" />
-            </div>
+            
 
             <div className="footer-info" style={{textAlign: 'center', marginTop: '2rem', color: '#888'}}>
+                <div className='logo-f'>
+                <img src={Logo} alt="" />
+            </div>
                 <h4>Crown Star Colours Pvt. Ltd.</h4>
                 <div style={{marginTop: '1rem', fontSize: '0.85rem'}}>
                     <p><strong>Manufacturing Unit:</strong> 191, Panchratna 2, Industrial Estate, Ahmedabad - 382425</p>
