@@ -9,7 +9,7 @@
     gap: 2rem;
     flex-direction: column;
     text-transform: uppercase;
-    color: white;
+    color: black;
 }
 .left-t>:nth-child(1){
     color: var(--orange);

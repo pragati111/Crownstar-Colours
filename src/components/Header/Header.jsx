@@ -12,7 +12,7 @@ const Header = () => {
       {
         (menuOpened===false && mobile===true)?
         (<div
-         style={{backgroundColor: 'var(--appColor)', padding:"0.5rem", borderRadius:"5px"}} onClick={()=>setMenuOpened(true)}>
+         style={{backgroundColor: '#ADD8E6', padding:"0.5rem", borderRadius:"5px"}} onClick={()=>setMenuOpened(true)}>
           <img src={Bars} alt="" style={{width: '1.5rem',height: '1.5rem'}}/>
          </div>):
          <ul className='header-menu' style={mobile && !menuOpened ? {display: 'none'} : {}}>

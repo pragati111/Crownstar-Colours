@@ -14,18 +14,17 @@
 .right-h{
     flex: 1;
     position: relative;
-    background-color: var(--orange);
     overflow: visible;
 }
 
 .the-best-ad{
     margin-top: 4rem;
-    background-color: #363d42;
+    background-color: #ADD8E6;
     border-radius: 4rem;
     width:fit-content;
     padding: 20px 13px;
     text-transform: uppercase;
-    color: white;
+    color: black;
     position: relative;
     display: flex;
     align-items: center;
@@ -53,7 +52,7 @@
     text-transform: uppercase;
     font-size: 4.5rem;
     font-weight: bold;
-    color: white;
+    color: black;
     text-overflow: inherit;
 }
 
@@ -73,7 +72,7 @@
     flex-direction: column;
 }
 .figures>div>span:nth-of-type(1){
-    color: white;
+    color: black;
     font-size: 2rem;
 }
 .figures>div>span:nth-of-type(2){
@@ -87,12 +86,12 @@
   font-weight: normal;
 }
 .hero-buttons>:nth-child(1){
-  color: white;
+  color: black;
   background-color: var(--orange);
   width: 8rem;
 }
 .hero-buttons>:nth-child(2){
-  color: white;
+  color: black;
   background-color: transparent;
   width: 8rem;
   border: 2px solid var(--orange);
@@ -124,12 +123,12 @@
     color: var(--gray);
 }
 .heart-rate>span:nth-child(3){
-    color: white;
+    color: black;
     font-size: 1.5rem;
 }
 .hero-image{
     position: absolute;
-    top: 12rem;
+    top: 18rem;
     right: 18rem;
     width: 23rem;
 }
@@ -160,7 +159,7 @@
     color: var(--gray);
 }
 .calories>div>:nth-child(2){
-    color: white;
+    color: black;
     font-size: 1.5rem;
 }
 .details-r{
@@ -240,13 +239,13 @@
         width: 2rem;
     }
     .calories>div>:nth-child(2){
-        color: white;
+        color: black;
         font-size: 1rem;
     }
     .hero-image{
         position: relative;
         width: 15rem;
-        left: 7rem;
+        left: 2.5rem;
         top: 4rem;
         align-self: center;
     }

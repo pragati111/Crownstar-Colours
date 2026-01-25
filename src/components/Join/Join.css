@@ -4,7 +4,7 @@
     gap: 10rem;
 }
 .left-j{
-    color: white;
+    color: black;
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -29,7 +29,7 @@
 .email-container{
     display: flex;
     gap: 3rem;
-    background-color: gray;
+    background-color: #ADD8E6;
     padding: 1rem 2rem;
 }
 .email-container>input{
