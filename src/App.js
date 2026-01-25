@@ -15,13 +15,14 @@ function App() {
     <div className="App">
       <Hero />  
       <VMV/>
+      <GlowSection/>
       <Programs/>
       <ProductRangeExtended/>
       <LabEquipments/>
       <Reasons/>
       <Join/>
       <Footer/>
-      <GlowSection/>
+      
     </div>
   );
 }

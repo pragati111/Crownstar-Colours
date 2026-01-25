@@ -8,21 +8,25 @@ import image4 from "../../assets/image4.png"
 const GlowSection = () => {
   return (
     <section className="glow-section">
-      <GlowCard
-        title="Industrial Coatings"
-        description="High-performance coatings engineered for durability and precision."
-        image={image2}
-      />
-      <GlowCard
-        title="Powder Coatings"
-        description="Durable, heat-resistant powder coating solutions."
-        image={image3}
-      />
-      <GlowCard
-        title="Heat Resistant Paints"
-        description="Advanced coatings resistant up to 600°C."
-        image={image4}
-      />
+      <h2 className="glow-section-heading">OUR 3 MAIN PRODUCTS</h2>
+
+      <div className="glow-cards-wrapper">
+        <GlowCard
+          title="Industrial Coatings"
+          description="High-performance coatings engineered for durability and precision."
+          image={image2}
+        />
+        <GlowCard
+          title="Powder Coatings"
+          description="Durable, heat-resistant powder coating solutions."
+          image={image3}
+        />
+        <GlowCard
+          title="Heat Resistant Paints"
+          description="Advanced coatings resistant up to 600°C."
+          image={image4}
+        />
+      </div>
     </section>
   )
 }

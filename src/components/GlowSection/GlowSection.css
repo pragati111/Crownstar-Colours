@@ -1,8 +1,21 @@
 .glow-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
   padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  text-align: center;
+}
+
+.glow-section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  color: black;
+  font-style: italic;
+}
+
+
+.glow-cards-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
