@@ -1,24 +1,7 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import './Join.css'
-import emailjs from '@emailjs/browser'
-const Join = () => {
-    const form = useRef();
-    const sendEmail = (e) => {
-    e.preventDefault();
 
-    emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
+const Join = () => {
   return (
     <div>
       <div className="Join" id='join-us'>
@@ -26,18 +9,21 @@ const Join = () => {
             <hr/>
             <div>
                 <span className='stroke-text'>READY TO</span>
-                <span>LEVEL UP</span>
+                <span>TRANSFORM</span>
             </div>
             <div>
-                <span>YOUR BODY</span>
+                <span>YOUR SPACE</span>
                 <span className='stroke-text'>WITH US?</span>
             </div>
         </div>
         <div className="right-j">
-            <form ref={form} action="" className='email-container' onSubmit={sendEmail}>
-                <input type="email" name='user_email' placeholder='Enter your Email Address'/>
-                <button className='btn btn-j'>Join Now</button>
-            </form>
+            <div className='email-container'>
+                <span className='email-text'>sales@crownstarcolors.com</span>
+                <svg className='mailbox-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="4" width="20" height="12" rx="2" ry="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+            </div>
         </div>
       </div>
     </div>

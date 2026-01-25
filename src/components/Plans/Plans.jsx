@@ -7,10 +7,10 @@ const Plans = () => {
     <div className='plans-container'>
         <div className="blur plans-blur-1"></div>
         <div className="blur plans-blur-2"></div>
-      <div className="programs-header" style={{gap: '2rem'}}>
-        <span className='stroke-text'>Ready To Start</span>
-        <span>Your Journey</span>
-        <span className='stroke-text'>Now Withus</span>
+      <div className="programs-header" style={{gap: '0.2rem'}}>
+        <span className='stroke-text'>Professional Painting</span>
+        <span>Services & Solutions</span>
+        <span className='stroke-text'>Choose Your Perfect Plan</span>
       </div>
       {/*plans card */}
       <div className="plans">
@@ -19,7 +19,7 @@ const Plans = () => {
                 <div className="plan" key={i}>
                     {plan.icon}
                     <span>{plan.name}</span>
-                    <span>$ {plan.price}</span>
+                    <span>      {plan.price}</span>
                     <div className="features">
                         {plan.features.map((feature,i)=>(
                             <div className="feature">
@@ -28,8 +28,7 @@ const Plans = () => {
                             </div>
                         ))}
                     </div>
-                    <div><span>See more benefits -&gt; </span></div>
-                    <button className='btn'>Join Now</button>
+                    
                 </div>
             ))
         }

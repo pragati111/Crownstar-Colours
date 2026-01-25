@@ -1,11 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import Header from '../Header/Header'
-import hero_image from "../../assets/hero_image.png"
 import crown_logo from "../../assets/crown_logo.png"
-import hero_image_back from "../../assets/hero_image_back.png"
-import Heart from "../../assets/heart.png"
-import Calories from "../../assets/calories.png"
 import { motion } from 'framer-motion'
 const Hero = () => {
     const transition = {type:'spring',duration:3}
@@ -22,34 +18,30 @@ const Hero = () => {
              whileInView={{left:'8px'}}
              transition={{...transition, type: 'tween'}}
             ></motion.div>
-            <span>the best fitness club in the town</span>
+            <span>premium paints and coatings since 2012</span>
         </div>
         {/*hero heading*/}
         <div className="hero-text">
             <div>
-                <span className='stroke-text'>Shape </span>
+                <span className='stroke-text'>Transform </span>
                 <span>Your</span>
             </div>
             <div>
-                <span>Ideal body</span>
+                <span>Spaces</span>
             </div>
             <div>
                 <span>
-                    In here we will help you to shape and build your ideal body and live up your life to fullest
+                    Crown Star Colours delivers world-class paints, primers, and decorative products with superior quality and innovation
                 </span>
             </div>
         </div>
         {/*figures*/}
         <div className="figures">
-            <div><span>+140</span><span>Expert coaches</span></div>
-            <div><span>+978</span><span>Members Joined</span></div>
-            <div><span>+50</span><span>Fitness Programs</span></div>
+            <div><span>14+</span><span>Years In Business</span></div>
+            <div><span>3000+</span><span>Projects Completed</span></div>
+            <div><span>12+</span><span>Product Lines</span></div>
         </div>
-        {/*hero buttons*/}
-        <div className="hero-buttons">
-            <button className='btn'>Get Started</button>
-            <button className='btn'>Learn More</button>
-        </div>
+        
       </div>
       <div className="right-h">
         {/*<motion.div 

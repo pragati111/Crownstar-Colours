@@ -2,6 +2,7 @@
     display: flex;
     gap:1rem;
     padding: 0 2rem;
+    animation: fadeInUp 0.8s ease-out;
 }
 .left-t{
     display: flex;
@@ -63,9 +64,15 @@
     bottom: 1rem;
     left: 3rem;
 }
+
 .arrows>img{
     width: 1.5rem;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.arrows>img:hover{
+    transform: scale(1.2) translateY(-3px);
 }
 @media screen and (max-width:768px){
     .Testimonials{

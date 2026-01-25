@@ -13,7 +13,6 @@ function App() {
       <Programs/>
       <Reasons/>
       <Plans/>
-      <Testimonials/>
       <Join/>
       <Footer/>
     </div>

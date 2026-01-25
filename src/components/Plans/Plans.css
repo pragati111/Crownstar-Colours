@@ -24,14 +24,29 @@
     justify-content: center;
     gap: 3rem;
 }
+
+.plan:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.plan:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.plan:nth-child(3) {
+    animation-delay: 0.6s;
+}
 .plan{
     display: flex;
     flex-direction: column;
-    background: var(--planCard);
-    color: black;
+    background: #FFFFFF;
+    color: var(--primary-dark);
     gap: 2rem;
     padding: 1.5rem;
     width: 15rem;
+    border-radius: 12px;
+    animation: scaleIn 0.6s ease-out both;
+    transition: all 0.3s ease-out;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 .plan>svg{
     fill: black;
@@ -51,6 +66,13 @@
 }
 .plan>button{
     color: var(--orange);
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(217, 82, 65, 0.15);
+    border-color: var(--orange);
+    background: #FFF8F5;
 }
 .features{
     display: flex;
