@@ -47,7 +47,7 @@ const productCategories = [
 
 const ProductRangeExtended = () => {
   return (
-    <div className="product-range-container">
+    <div className="product-range-container" id="product-range-container">
       <span className="product-subtitle">Our Expertise</span>
       <h2 className="product-title">Extended Product Range</h2>
 

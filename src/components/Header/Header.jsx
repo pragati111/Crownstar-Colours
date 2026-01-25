@@ -18,9 +18,10 @@ const Header = () => {
          <ul className='header-menu' style={mobile && !menuOpened ? {display: 'none'} : {}}>
         <li><Link onClick={()=>setMenuOpened(false)} to='home' span={true} smooth={true}>Home</Link></li>
         <li><Link onClick={()=>setMenuOpened(false)} to='programs' span={true} smooth={true}>Products</Link></li>
+        <li><Link onClick={()=>setMenuOpened(false)} to='product-range-container' span={true} smooth={true}>Extended Product Range</Link></li>
+        <li><Link onClick={()=>setMenuOpened(false)} to='lab-container' span={true} smooth={true}>Major Lab Equipments</Link></li>
         <li><Link onClick={()=>setMenuOpened(false)} to='reasons' span={true} smooth={true}>Why us?</Link></li>
-        <li><Link onClick={()=>setMenuOpened(false)} to='plans' span={true} smooth={true}>Services</Link></li>
-        <li><Link onClick={()=>setMenuOpened(false)} to='Testimonials' span={true} smooth={true}>Testimonials</Link></li>
+        <li><Link onClick={()=>setMenuOpened(false)} to='join-us' span={true} smooth={true}>Contact Us</Link></li>
       </ul>
       }
     </div>
