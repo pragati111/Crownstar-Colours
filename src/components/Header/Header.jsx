@@ -17,6 +17,7 @@ const Header = () => {
          </div>):
          <ul className='header-menu' style={mobile && !menuOpened ? {display: 'none'} : {}}>
         <li><Link onClick={()=>setMenuOpened(false)} to='home' span={true} smooth={true}>Home</Link></li>
+        <li><Link onClick={()=>setMenuOpened(false)} to='glow-section' span={true} smooth={true}>Main Products</Link></li>
         <li><Link onClick={()=>setMenuOpened(false)} to='programs' span={true} smooth={true}>Products</Link></li>
         <li><Link onClick={()=>setMenuOpened(false)} to='product-range-container' span={true} smooth={true}>Extended Product Range</Link></li>
         <li><Link onClick={()=>setMenuOpened(false)} to='lab-container' span={true} smooth={true}>Major Lab Equipments</Link></li>

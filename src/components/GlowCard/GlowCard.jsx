@@ -1,8 +1,7 @@
 import React from 'react'
 import './GlowCard.css'
 
-
-const GlowCard = ({ title, description, image }) => {
+const GlowCard = ({ title, description, image, glowColor }) => {
 
   const handlePointerMove = (e) => {
     const card = e.currentTarget
@@ -11,8 +10,8 @@ const GlowCard = ({ title, description, image }) => {
     const x = e.clientX - rect.left
     const y = e.clientY - rect.top
 
-    card.style.setProperty('--x', x)
-    card.style.setProperty('--y', y)
+    card.style.setProperty('--x', `${x}px`)
+    card.style.setProperty('--y', `${y}px`)
   }
 
   const handlePointerLeave = (e) => {
@@ -27,6 +26,7 @@ const GlowCard = ({ title, description, image }) => {
       data-glow
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
+      style={{ '--glow-color': glowColor }}   
     >
       <span data-glow />
 
