@@ -51,6 +51,16 @@
   line-height: 1.6;
 }
 
+.lab-animation {
+  width: 100%;
+  max-width: 3100px;   /* or any value you want */
+  height: 330px;
+
+  margin: 0 auto;      /* 🔥 THIS centers the container */
+  position: relative;
+
+  overflow: visible;
+}
 
 
 @keyframes fadeInUp {

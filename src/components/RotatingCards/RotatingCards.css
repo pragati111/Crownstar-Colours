@@ -1,8 +1,8 @@
 /* From Uiverse.io by ilkhoeri */
 
 .wrapper {
-  width: 100%;
-  height: 100vh;
+  width: 214vh;
+  height: 60vh;
   position: relative;
   text-align: center;
   display: flex;
@@ -33,16 +33,19 @@
 
 @keyframes rotating {
   from {
-    transform: perspective(var(--perspective))
+    transform: translate3d(-50%, -50%, 0)
+      perspective(var(--perspective))
       rotateX(var(--rotateX))
       rotateY(0);
   }
   to {
-    transform: perspective(var(--perspective))
+    transform: translate3d(-50%, -50%, 0)
+      perspective(var(--perspective))
       rotateX(var(--rotateX))
       rotateY(1turn);
   }
 }
+
 
 .card {
   position: absolute;
