@@ -110,5 +110,17 @@
 .inner:hover {
   animation-play-state: paused;
 }
+@media screen and (max-width:768px){
+  .wrapper {
+  width: 100vh;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+}
 
 
