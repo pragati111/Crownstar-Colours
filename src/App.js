@@ -10,6 +10,7 @@ import VMV from './components/VMV/VMV';
 import LabEquipments from './components/LabEquipments/LabEquipments';
 import ProductRangeExtended from './components/ProductRangeExtended/ProductRangeExtended';
 import GlowSection from './components/GlowSection/GlowSection';
+import RotatingCards from './components/RotatingCards/RotatingCards';
 function App() {
   return (
     <div className="App">
@@ -22,7 +23,6 @@ function App() {
       <Reasons/>
       <Join/>
       <Footer/>
-      
     </div>
   );
 }

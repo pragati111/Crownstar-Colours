@@ -1,6 +1,5 @@
 .lab-container {
   padding: 4rem 2rem;
-  background: #ffffff;
   text-align: center;
 }
 
@@ -51,6 +50,8 @@
   color: #334e68;
   line-height: 1.6;
 }
+
+
 
 @keyframes fadeInUp {
   from {

@@ -1,5 +1,6 @@
 import React from 'react'
 import './LabEquipments.css'
+import RotatingCards from '../RotatingCards/RotatingCards'
 
 const equipments = [
   { name: 'Salt Spray Chamber', desc: 'Testing corrosion resistance' },
@@ -25,13 +26,8 @@ const LabEquipments = () => {
       <span className="lab-subtitle">Quality Assurance</span>
       <h2 className="lab-title">Our Major Lab Equipments</h2>
 
-      <div className="lab-grid">
-        {equipments.map((item, index) => (
-          <div className="lab-card" key={index}>
-            <h3>{item.name}</h3>
-            <p>{item.desc}</p>
-          </div>
-        ))}
+      <div className="lab-animation">
+        <RotatingCards />
       </div>
     </div>
   )

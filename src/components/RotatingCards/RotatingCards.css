@@ -1,0 +1,111 @@
+/* From Uiverse.io by ilkhoeri */
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.inner {
+  --w: 130px;   /* ⬆ was 100px */
+  --h: 190px;   /* ⬆ was 150px */
+
+  --translateZ: calc((var(--w) + var(--h)) + 0px);
+  --rotateX: -15deg;
+  --perspective: 1000px;
+
+  position: absolute;
+  width: var(--w);
+  height: var(--h);
+  top: 25%;
+  left: calc(50% - (var(--w) / 2) - 2.5px);
+  z-index: 2;
+
+  transform-style: preserve-3d;
+  transform: perspective(var(--perspective));
+  animation: rotating 20s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: perspective(var(--perspective))
+      rotateX(var(--rotateX))
+      rotateY(0);
+  }
+  to {
+    transform: perspective(var(--perspective))
+      rotateX(var(--rotateX))
+      rotateY(1turn);
+  }
+}
+
+.card {
+  position: absolute;
+  inset: 0;
+  border: 2px solid rgba(var(--color-card));
+  border-radius: 12px;
+  overflow: hidden;
+
+  transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
+    translateZ(var(--translateZ));
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card-content h3 {
+  font-size: 11px;        /* 🔽 reduced */
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 4px;
+
+  /* Prevent overflow */
+  max-width: 100%;
+  white-space: normal;
+}
+
+.card-content p {
+  font-size: 9px;         /* 🔽 reduced */
+  line-height: 1.25;
+  opacity: 0.85;
+
+  /* Clamp description nicely */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.img {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(var(--color-card), 0.2) 0%,
+    rgba(var(--color-card), 0.6) 80%,
+    rgba(var(--color-card), 0.9) 100%
+  );
+}
+
+.inner:hover {
+  animation-play-state: paused;
+}
+
+
