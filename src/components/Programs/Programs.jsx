@@ -24,16 +24,20 @@ const Programs = () => {
   }, []);
 
   return (
-    <div className='Programs' id='programs'>
-      {/*header */}
-      <div className={`programs-header ${isVisible ? 'animate-visible' : ''}`}>
-        <span className='stroke-text'>Explore Our</span>
-        <span>Product Range</span>
-      </div>
-      <FlipCards/>
-
+  <div className="Programs" id="programs">
+    {/* Header */}
+    <div className={`programs-header ${isVisible ? 'animate-visible' : ''}`}>
+      <span className="stroke-text">Explore Our</span>
+      <span>Product Range</span>
     </div>
-  )
+
+    {/* Cards */}
+    <div className="flipcards">
+      <FlipCards />
+    </div>
+  </div>
+);
+
 }
 
 export default Programs

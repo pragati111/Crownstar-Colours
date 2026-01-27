@@ -151,9 +151,9 @@ const FlipCards = () => {
     const state = Flip.getState(chosenRef.current);
     const chosenRect = chosenRef.current.getBoundingClientRect();
     const viewportWidth = window.innerWidth;
-const viewportHeight = window.innerHeight;
-const chosenWidth = chosenRect.width;
-const chosenHeight = chosenRect.height;
+  const viewportHeight = window.innerHeight;
+  const chosenWidth = chosenRect.width;
+  const chosenHeight = chosenRect.height;
     const isMobile = viewportWidth <= 768;
 
     let left, top;

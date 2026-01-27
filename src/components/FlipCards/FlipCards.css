@@ -10,7 +10,6 @@ html, body {
   font-family: Lato, sans-serif;
 }
 
-
 .app {
   position: relative;
   visibility: hidden;
@@ -18,10 +17,9 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: max-content;   /* 🔥 key fix */
-  margin: 0 auto;       /* 🔥 center horizontally */
+  
 }
+
 
 
 
@@ -29,9 +27,12 @@ html, body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 3rem;
-  justify-content: center; /* center grid horizontally */
-  width: 100%;             /* take full available width */
-  max-width: calc(4 * 180px + 3 * 3rem); /* optional: max width for 4 cards + gaps */
+
+  width: 100%;
+  max-width: 900px;     /* 4 cards * 180 + gaps */
+  margin: 0 auto;
+
+  justify-items: center;
 }
 
 .user-card {
@@ -142,18 +143,24 @@ html, body {
 }
 @media screen and (max-width: 768px) {
   .card-board {
-    grid-template-columns: 1fr;   /* ✅ one card per row */
-    gap: 1.5rem;                  /* slightly tighter spacing */
-    margin-left: 3rem;
-    margin-right: 3rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    justify-items: center; 
+    justify-content: center;
   }
 
   .user-card {
-    width: 90vw;                  /* responsive width */
-    max-width: 320px;             /* keeps it neat */
+    max-width: 420px;
     height: 200px;
+    margin: 0 auto;
   }
 
+  
   /* Opened card container */
   .chosen {
     position: relative; /* NOT fixed */
@@ -190,8 +197,5 @@ html, body {
 
   .chosen__details__name {
     font-size: 0.8rem;
-  }
-  .app {
-    width: 100%;
   }
 }
