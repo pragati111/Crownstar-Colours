@@ -8,6 +8,7 @@ import VMV from './components/VMV/VMV';
 import LabEquipments from './components/LabEquipments/LabEquipments';
 import ProductRangeExtended from './components/ProductRangeExtended/ProductRangeExtended';
 import GlowSection from './components/GlowSection/GlowSection';
+import FlipCards from './components/FlipCards/FlipCard'
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,6 @@ function App() {
       <Reasons/>
       <Join/>
       <Footer/>
-
     </div>
   );
 }

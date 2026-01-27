@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Programs.css'
 import {programsData} from '../../data/programsData'
 import RightArrowImg from '../../assets/rightArrow.png'
+import FlipCards from '../FlipCards/FlipCard'
 const Programs = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -29,16 +30,8 @@ const Programs = () => {
         <span className='stroke-text'>Explore Our</span>
         <span>Product Range</span>
       </div>
-      <div className="program-categories">
-        {programsData.map((programs, index)=>(
-            <div className={`category ${isVisible ? 'animate-visible' : ''}`} key={index} style={{animationDelay: `${index * 0.1}s`}}>
-                {programs.image}
-                <span>{programs.heading}</span>
-                <span>{programs.details}</span>
-                {/*<div className="join-now"><span>Learn More</span><img src={RightArrowImg} alt="" /></div>*/}
-            </div>
-        ))}
-      </div>
+      <FlipCards/>
+
     </div>
   )
 }

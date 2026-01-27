@@ -8,54 +8,107 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: Lato, sans-serif;
-  display: grid;
-  place-items: center;
 }
 
+
 .app {
-  background: white;
   position: relative;
-  overflow: auto;
   visibility: hidden;
-  width: 90vmin;
-  max-height: 90vmin;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: max-content;   /* 🔥 key fix */
+  margin: 0 auto;       /* 🔥 center horizontally */
 }
+
+
 
 .card-board {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  width: max-content;
 }
 
 .user-card {
+  width: 180px;
+  height: 180px;
+  background: #ffffff; 
+  border-radius: 14px;   /* 🔥 smooth but modern */
+  overflow: hidden;  
   cursor: pointer;
-  font-size: 0;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
+
 .user-card img {
+
   width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
+  transition: transform 0.35s ease;
+}
+
+/* 🔥 Hover animation */
+.user-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow:
+    0 30px 50px rgba(0, 0, 0, 0.55),
+    0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Subtle zoom inside card */
+.user-card:hover img {
+  transform: scale(1.08);
 }
 
 .chosen {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   display: flex;
+  align-items: stretch;
   flex-direction: row;
   visibility: hidden;
-  transform: translate(-50%, -50%);
   z-index: 10;
+  max-height: 100%;
+  max-width: 100%;
+}
+.chosen {
+  width: calc(200px * 4 + 3rem * 3); /* 4 cards + gaps */
 }
 
-.chosen__image,
-.chosen__details {
-  height: 47.5vmin;
-  width: 47.5vmin;
+
+.chosen__image {
+  width: 200px;   /* same as grid card */
+  height: 200px;
+  flex-shrink: 0;
 }
 
 .chosen__image img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;   /* 🔥 prevents distortion */
+}
+
+.chosen__details {
+  width: 20.5vmin;
+  height: 21.7vmin;
+  flex: 1;
+  min-width: 0;
+
+}
+
+
+
+.chosen__image img {
+  width: 100%;
+  height: 100%;
   display: block;
   z-index: 1;
   cursor: pointer;
@@ -65,7 +118,7 @@ html, body {
   background: #232323;
   color: white;
   padding: 2rem 1.5rem;
-  font-size: 1.75vmin;
+  font-size: 0.9rem;
   overflow: hidden;
 }
 
@@ -74,7 +127,7 @@ html, body {
 }
 
 .chosen__details__name {
-  font-size: 3.5vmin;
+  font-size: 1.5vmin;
   text-transform: uppercase;
 }
 
