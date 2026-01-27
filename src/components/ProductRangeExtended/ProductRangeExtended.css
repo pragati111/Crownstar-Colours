@@ -77,3 +77,16 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .product-range-container {
+    padding: 3rem 1rem; /* reduce side padding */
+  }
+
+  .product-sections {
+    grid-template-columns: 1fr; /* single centered column */
+    max-width: 100%;
+  }
+}
+
+
