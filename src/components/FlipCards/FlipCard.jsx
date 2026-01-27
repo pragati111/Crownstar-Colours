@@ -136,59 +136,95 @@ const FlipCards = () => {
   const { contextSafe } = useGSAP({ scope: appRef });
 
   const showDetails = contextSafe((card) => {
-    if (activeItem) hideDetails();
+  if (activeItem) hideDetails();
 
-    const cards = gsap.utils.toArray(".user-card");
+  const cards = gsap.utils.toArray(".user-card");
+  const chosenImg = chosenImageRef.current;
 
-    const onLoad = () => {
-      Flip.fit(chosenRef.current, card, { scale: false, fitChild: chosenImageRef.current });
-      const state = Flip.getState(chosenRef.current);
-      const boardRect = boardRef.current.getBoundingClientRect();
-      const chosenRect = chosenRef.current.getBoundingClientRect();
-
-      const centerX =
-        boardRect.left + boardRect.width / 2 - chosenRect.width / 2;
-      const centerY =
-        boardRect.top + boardRect.height / 2 - chosenRect.height / 2;
-
-      gsap.set(chosenRef.current, {
-        position: "absolute",
-        left: centerX,
-        top: centerY,
-        xPercent: -50,
-        yPercent: -50,
-        visibility: "visible",
-        overflow: "hidden",
-      });
-
-      // Flip zoom animation
-      Flip.from(state, {
-        duration: 0.5,
-        ease: "power2.inOut",
-        scale: true,
-        onComplete: () => {
-          // Slide details in after image zooms
-          gsap.to(chosenDetailsRef.current, { xPercent: 0, duration: 0.5, ease: "power2.out" });
-          gsap.set(chosenDetailsRef.current, { overflow: "auto" });
-        }
-      });
-
-      document.addEventListener("click", hideDetails);
-      chosenImageRef.current.removeEventListener("load", onLoad);
-    };
-
-    const data = card.dataset;
-    chosenImageRef.current.src = card.querySelector("img").src;
-    chosenImageRef.current.addEventListener("load", onLoad);
-
-    chosenNameRef.current.textContent = data.title || "";
-    chosenAliasesRef.current.textContent = data.secondary || "";
-    chosenDescriptionRef.current.textContent = data.text || "";
-
-    // Fade out other cards
-    gsap.to(cards, { opacity: 0.3 });
-    setActiveItem(card);
+  // RESET chosen container BEFORE computing new position
+  gsap.set(chosenRef.current, {
+    clearProps: "all",   // remove previous left/top/transform/scale
+    visibility: "hidden",
   });
+
+  const onLoad = () => {
+    const state = Flip.getState(chosenRef.current);
+    const chosenRect = chosenRef.current.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+const viewportHeight = window.innerHeight;
+const chosenWidth = chosenRect.width;
+const chosenHeight = chosenRect.height;
+    const isMobile = viewportWidth <= 768;
+
+    let left, top;
+
+    if (isMobile) {
+  const cardRect = card.getBoundingClientRect();
+
+  // center over the card
+  let left = cardRect.left + cardRect.width / 2 - chosenWidth / 2;
+  let top = cardRect.top + cardRect.height / 2 - chosenHeight / 2;
+
+  // CLAMP so it never goes off-screen
+  left = Math.max(8, Math.min(left, viewportWidth - chosenWidth - 8));
+  top = Math.max(8, Math.min(top, viewportHeight - chosenHeight - 8));
+
+  gsap.set(chosenRef.current, {
+    position: "absolute",
+    visibility: "visible",
+    overflow: "hidden",
+  });
+}else {
+      // Desktop: animate from center of grid
+      const boardRect = boardRef.current.getBoundingClientRect();
+      left = boardRect.left + boardRect.width / 2 - chosenRect.width / 2;
+      top = boardRect.top + boardRect.height / 2 - chosenRect.height / 2;
+    }
+
+    gsap.set(chosenRef.current, {
+      position: "fixed",
+      left,
+      top,
+      visibility: "visible",
+      overflow: "hidden",
+    });
+
+    Flip.from(state, {
+      duration: 0.5,
+      ease: "power2.inOut",
+      scale: true,
+      onComplete: () => {
+        gsap.to(chosenDetailsRef.current, {
+          xPercent: 0,
+          duration: 0.5,
+          ease: "power2.out",
+        });
+        gsap.set(chosenDetailsRef.current, { overflow: "auto" });
+      },
+    });
+
+    document.addEventListener("click", hideDetails);
+    chosenImg.removeEventListener("load", onLoad);
+  };
+
+  chosenImg.src = card.querySelector("img").src;
+
+  if (chosenImg.complete) {
+    onLoad();
+  } else {
+    chosenImg.addEventListener("load", onLoad);
+  }
+
+  const data = card.dataset;
+  chosenNameRef.current.textContent = data.title || "";
+  chosenAliasesRef.current.textContent = data.secondary || "";
+  chosenDescriptionRef.current.textContent = data.text || "";
+
+  gsap.to(cards, { opacity: 0.3 });
+  setActiveItem(card);
+});
+
+
 
   const hideDetails = contextSafe(() => {
     if (!activeItem) return;

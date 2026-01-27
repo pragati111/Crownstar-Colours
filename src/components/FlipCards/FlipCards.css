@@ -27,9 +27,11 @@ html, body {
 
 .card-board {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 3rem;
-  width: max-content;
+  justify-content: center; /* center grid horizontally */
+  width: 100%;             /* take full available width */
+  max-width: calc(4 * 180px + 3 * 3rem); /* optional: max width for 4 cards + gaps */
 }
 
 .user-card {
@@ -142,6 +144,8 @@ html, body {
   .card-board {
     grid-template-columns: 1fr;   /* ✅ one card per row */
     gap: 1.5rem;                  /* slightly tighter spacing */
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .user-card {
@@ -150,6 +154,43 @@ html, body {
     height: 200px;
   }
 
+  /* Opened card container */
+  .chosen {
+    position: relative; /* NOT fixed */
+    transform: translate(-50%, -50%); /* center over card */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    z-index: 1000;
+  }
+
+  /* Image section */
+  .chosen__image,
+  .chosen__details {
+    width: 100%;
+    height: 20%;
+  }
+
+  .chosen__image img {
+    width: 100%;
+    height: auto;
+    max-height: 50vw; /* adjust so it doesn't bulge */
+    object-fit: contain;
+    border-radius: 12px 12px 0 0;
+  }
+
+  /* Details section */
+  .chosen__details {
+    font-size: 0.65rem;
+    padding: 1rem;
+    max-height: 20vh;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .chosen__details__name {
+    font-size: 0.8rem;
+  }
   .app {
     width: 100%;
   }
