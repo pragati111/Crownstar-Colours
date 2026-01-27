@@ -19,3 +19,8 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 768px) {
+  .glow-section-heading{
+    font-size: 2rem;
+  }
+}
