@@ -74,11 +74,11 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .lab-container {
-    padding: 3rem 1rem;      /* equal spacing */
+  .lab-container {      /* equal spacing */
     overflow-x: hidden;     /* safety */
     box-sizing: border-box;
   }
+
 
   .lab-grid {
     grid-template-columns: 1fr; /* single centered column */
@@ -86,9 +86,11 @@
   }
 
   .lab-animation {
-    max-width: 100vw;       /* IMPORTANT */
-    height: auto;
+    max-width: 100vw; 
     overflow: hidden;
+    height: 470px;
+ 
   }
+
 }
 
