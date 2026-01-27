@@ -138,3 +138,19 @@ html, body {
 .chosen__details__description {
   line-height: 1.5;
 }
+@media screen and (max-width: 768px) {
+  .card-board {
+    grid-template-columns: 1fr;   /* ✅ one card per row */
+    gap: 1.5rem;                  /* slightly tighter spacing */
+  }
+
+  .user-card {
+    width: 90vw;                  /* responsive width */
+    max-width: 320px;             /* keeps it neat */
+    height: 200px;
+  }
+
+  .app {
+    width: 100%;
+  }
+}
