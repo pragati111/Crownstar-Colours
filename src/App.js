@@ -8,7 +8,7 @@ import VMV from './components/VMV/VMV';
 import LabEquipments from './components/LabEquipments/LabEquipments';
 import ProductRangeExtended from './components/ProductRangeExtended/ProductRangeExtended';
 import GlowSection from './components/GlowSection/GlowSection';
-import FlipCards from './components/FlipCards/FlipCard'
+import AnimatedCard from './components/AnimatedCard/AnimatedCard';
 function App() {
   return (
     <div className="App">

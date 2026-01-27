@@ -4,10 +4,12 @@
 }
 
 .vmv-subtitle {
-  color: #ff4d4d;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  color: black;
+  font-style: italic;
 }
 
 .vmv-title {
@@ -71,4 +73,14 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+@media screen and (max-width: 768px) {
+  .vmv-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  color: black;
+  font-style: italic;
+}
 }

@@ -1,40 +1,44 @@
-import React from 'react'
-import './VMV.css'
+import React from "react";
+import "./VMV.css";
+import AnimatedCard from "../AnimatedCard/AnimatedCard";
+import { VisionIcon, MissionIcon, ValuesIcon } from '../../icons'
 
 const VMV = () => {
   return (
     <div className="vmv-container">
-      <span className="vmv-subtitle">Our Foundation</span>
-      <h2 className="vmv-title">Vision • Mission • Values</h2>
+      <span className="vmv-subtitle">OUR FOUNDATION</span>
+      <br />
+      <br />
+      <br />
 
       <div className="vmv-cards">
-        <div className="vmv-card">
-          <h3>Vision</h3>
-          <p>
-            To be a global organization that lives by strong values and
-            consistently creates excellence in everything it does.
-          </p>
-        </div>
+        <AnimatedCard
+          title="VISION"
+          description="To be a global organization that lives by strong values and consistently creates excellence in everything it does."
+          variant="vision"
+          icon={<VisionIcon />}
+        />
 
-        <div className="vmv-card">
-          <h3>Mission</h3>
-          <p>
-            To ethically grow tenfold by setting global benchmarks across all
-            performance parameters, with an unwavering focus on 100% quality.
-          </p>
-        </div>
+        <AnimatedCard
+          title="MISSION"
+          description="To ethically grow tenfold by setting global benchmarks across all performance parameters, with an unwavering focus on 100% quality."
+          variant="mission"
+          icon={<MissionIcon />}
+        />
 
-        <div className="vmv-card">
-          <h3>Values</h3>
-          <ul>
-            <li>Happiness in our work and workplace</li>
-            <li>Peaceful and positive environment</li>
-            <li>Self-motivation & continuous improvement</li>
-          </ul>
-        </div>
+        <AnimatedCard
+          title="VALUES"
+          list={[
+            "Happiness in our work and workplace",
+            "Peaceful and positive environment",
+            "Self-motivation & continuous improvement",
+          ]}
+          variant="values"
+          icon={<ValuesIcon />}
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default VMV
+export default VMV;
