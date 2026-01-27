@@ -110,17 +110,22 @@
 .inner:hover {
   animation-play-state: paused;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .wrapper {
-  width: 100vh;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+    width: 100vw;          /* ✅ use viewport width */
+    height: 100vh;
+    padding: 0 1rem;       /* ✅ equal left/right spacing */
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .inner {
+    --w: 110px;            /* 🔽 slightly smaller cards */
+    --h: 160px;
+    top: 50%;
+    left: 50%;
+  }
 }
 
-}
 
 

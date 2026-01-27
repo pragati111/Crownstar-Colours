@@ -50,12 +50,10 @@
     width: 2.5rem;
     height: 2.5rem;
     color: var(--orange);
-    cursor: pointer;
     transition: all 0.3s ease-out;
 }
 
 .mailbox-icon:hover{
-    transform: scale(1.15) translateY(-3px);
     color: #C63C2E;
 }
 ::placeholder{
