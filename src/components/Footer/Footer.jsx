@@ -15,12 +15,12 @@ const Footer = () => {
         
             
 
-            <div className="footer-info" style={{textAlign: 'center', marginTop: '2rem', color: '#888'}}>
+            <div className="footer-info" style={{textAlign: 'center', marginTop: '2rem', color:"#303030"}}>
                 <div className='logo-f'>
                 <img src={Logo} alt="" />
             </div>
                 <h4>Crown Star Colours Pvt. Ltd.</h4>
-                <div style={{marginTop: '1rem', fontSize: '0.85rem'}}>
+                <div style={{marginTop: '1rem', fontSize: '0.85rem', color: '#303030'}}>
                     <p><strong>Manufacturing Unit:</strong> 191, Panchratna 2, Industrial Estate, Ahmedabad - 382425</p>
                     <p><strong>Registered Office:</strong> 2, Archan Appt., Jodhpur Gam Road, Satellite - 380015</p>
                     <p><strong>Depot:</strong> Nagori Farm, Agra Link Road, Near New RTO, Jaipur - 302017</p>

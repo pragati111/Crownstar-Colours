@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: flex-start;
     animation: fadeInUp 0.6s ease-out 0.1s both;
-    border: 2px solid var(--orange);
+    border: 2px solid #F1DAB2;
 }
 
 .the-best-ad span{
@@ -39,7 +39,7 @@
 
 .the-best-ad>div{
     position: absolute;
-    background-color: var(--accentColor);
+    background-color:#F1DAB2;
     width: 5.4rem;
     height: 80%;
     left: 8px;

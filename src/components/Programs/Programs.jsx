@@ -32,7 +32,7 @@ const Programs = () => {
     </div>
 
     {/* Cards */}
-    <div className="flipcards">
+    <div >
       <FlipCards />
     </div>
   </div>

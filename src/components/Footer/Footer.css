@@ -25,6 +25,9 @@
 .logo-f>img{
     width: 8rem;
 }
+.footer-info{
+    color: black;
+}
 @media screen and (max-width: 768px){
     .logo-f>img{
     width: 5rem;
