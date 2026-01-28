@@ -20,11 +20,11 @@
 }
 
 .App {
-  background-image: url("assets/geometric-leaves.jpg");
-  background-color: white;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+              url("assets/geometric-leaves.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   gap: 6rem;
