@@ -2,7 +2,7 @@
     position: relative;
 }
 .Footer-container>hr{
-    border: 1px solid var(--lightgray);
+    border: 1px solid gray;
 }
 .footer{
     padding: 1rem 2rem;
