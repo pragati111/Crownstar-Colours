@@ -21,7 +21,7 @@ const VMV = () => {
 
         <AnimatedCard
           title="MISSION"
-          description="To ethically grow tenfold by setting global benchmarks across all performance parameters, with an unwavering focus on 100% quality."
+          description="To ethically grow by setting global benchmarks across all performance parameters, with an unwavering focus on 100% quality."
           variant="mission"
           icon={<MissionIcon />}
         />

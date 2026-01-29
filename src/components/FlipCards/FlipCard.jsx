@@ -149,20 +149,21 @@ const FlipCards = () => {
     let left, top;
 
 if (isMobile) {
-  const cardRect = card.getBoundingClientRect();
+  if (isMobile) {
+    const horizontalOffset = 50; // px → move right (adjust as you like)
 
-  left = cardRect.left + cardRect.width / 2 - chosenWidth / 2;
-  top = cardRect.top + cardRect.height / 2 - chosenHeight / 2;
-
-  // Clamp to viewport
-  left = Math.max(8, Math.min(left, viewportWidth - chosenWidth - 8));
-  top = Math.max(8, Math.min(top, viewportHeight - chosenHeight - 8));
+left = (viewportWidth - chosenWidth) / 2 + horizontalOffset;
+  top = (viewportHeight - chosenHeight) / 2;
 
   gsap.set(chosenRef.current, {
-    position: "absolute",
+    position: "fixed",
+    left,
+    top,
     visibility: "visible",
     overflow: "hidden",
   });
+}
+
 } else {
   const boardRect = boardRef.current.getBoundingClientRect();
   left = boardRect.left + boardRect.width / 2 - chosenWidth / 2;
