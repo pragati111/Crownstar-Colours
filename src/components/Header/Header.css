@@ -37,15 +37,28 @@
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
+
 @media screen and (max-width:768px){
-    .header>:nth-child(2){
-        position: fixed;
-        right: 2rem;
-        z-index: 99;
-    }
-    .header-menu{
-        flex-direction: column;
-        background-color: #F5F5F5;
-        padding: 2rem;
-    }
+  .header>:nth-child(2){
+    position: fixed;
+    right: 2rem;
+    top: 1.2rem;
+    z-index: 1001;
+  }
+
+  .header-menu{
+    position: fixed;
+    top: 4.5rem;           /* just below header */
+    right: 1rem;
+    width: 75%;
+    max-width: 280px;
+
+    flex-direction: column;
+    background-color: #F5F5F5;
+    padding: 1.5rem;
+    border-radius: 10px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
 }

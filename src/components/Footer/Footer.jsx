@@ -19,12 +19,13 @@ const Footer = () => {
                 <div className='logo-f'>
                 <img src={Logo} alt="" />
             </div>
-                <h4>Crown Star Colours Pvt. Ltd.</h4>
+                
                 <div style={{marginTop: '1rem', fontSize: '0.85rem', color: '#303030'}}>
+                    <p><strong>Phone Number: 8290062999</strong></p>
                     <p><strong>Manufacturing Unit:</strong> 191, Panchratna 2, Industrial Estate, Ahmedabad - 382425</p>
                     <p><strong>Registered Office:</strong> 2, Archan Appt., Jodhpur Gam Road, Satellite - 380015</p>
                     <p><strong>Depot:</strong> Nagori Farm, Agra Link Road, Near New RTO, Jaipur - 302017</p>
-                    <p style={{marginTop: '0.5rem', fontSize: '0.75rem'}}>ISO 14001:2015 | IATF 16949:2016 | BS OHSAS 18001:2007</p>
+                    <p style={{marginTop: '0.5rem', fontSize: '0.60rem'}}>CIN:U46634GJ2023PTC139002 | GST:24AAKCC8718Q1ZY</p>                    
                 </div>
             </div>
         </div>
