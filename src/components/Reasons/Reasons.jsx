@@ -21,10 +21,10 @@ const Reasons = () => {
             <span> choose us?</span>
         </div>
         <div className='details-r'>
-        <div><img src={tick} alt="" /><span>14+ YEARS IN PAINT INDUSTRY</span></div>
-        <div><img src={tick} alt="" /><span>3000+ PROJECTS COMPLETED</span></div>
-        <div><img src={tick} alt="" /><span>CERTIFIED & COMPLIANT PRODUCTS</span></div>
-        <div><img src={tick} alt="" /><span>DEDICATED CUSTOMER SUPPORT</span></div>
+        <div><img src={tick} alt="" /><span>Best quality at low price</span></div>
+        <div><img src={tick} alt="" /><span>Great products backed by a strong R&D</span></div>
+        <div><img src={tick} alt="" /><span>Highest market warranty</span></div>
+        <div><img src={tick} alt="" /><span>⁠Best coverage</span></div>
         </div>
         {/*<span style={{color:"var(--gray)", fontWeight: "normal"}}>Our Certifications</span>
           <div className="partners">
