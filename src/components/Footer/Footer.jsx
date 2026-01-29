@@ -22,9 +22,9 @@ const Footer = () => {
                 
                 <div style={{marginTop: '1rem', fontSize: '0.85rem', color: '#303030'}}>
                     <p><strong>Phone Number: 8290062999</strong></p>
-                    <p><strong>Manufacturing Unit:</strong> 191, Panchratna 2, Industrial Estate, Ahmedabad - 382425</p>
-                    <p><strong>Registered Office:</strong> 2, Archan Appt., Jodhpur Gam Road, Satellite - 380015</p>
-                    <p><strong>Depot:</strong> Nagori Farm, Agra Link Road, Near New RTO, Jaipur - 302017</p>
+                    <p><strong>Manufacturing Unit:</strong> 191, Panchratna 2, Industrial Estate, Kamod to Paldi Road, Ahmedabad - 382425</p>
+                    <p><strong>Registered Office:</strong> 2, Archan Aptt., Jodhpurgam Road, Satellite - 380015</p>
+                    <p><strong>Depot Address:</strong> Nagori Farm, Agra Link Road, Near New RTO Jagatpura, Jaipur - 302017</p>
                     <p style={{marginTop: '0.5rem', fontSize: '0.60rem'}}>CIN:U46634GJ2023PTC139002 | GST:24AAKCC8718Q1ZY</p>                    
                 </div>
             </div>
