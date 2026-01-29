@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer';
 import VMV from './components/VMV/VMV';
 import LabEquipments from './components/LabEquipments/LabEquipments';
 import ProductRangeExtended from './components/ProductRangeExtended/ProductRangeExtended';
-import GlowSection from './components/GlowSection/GlowSection';
 
 function App() {
   return (

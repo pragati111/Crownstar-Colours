@@ -6,7 +6,6 @@ import "./FlipCards.css";
 import bucket_dpp from "../../assets/damp-proof-paint.png"
 import wall_filler from "../../assets/wall-filler.png"
 import wood_polish from "../../assets/wood-polish.png"
-import wall_pop from "../../assets/wall-pop.png"
 import wall_primer from "../../assets/wall-primer.png"
 import ultimo_shine from "../../assets/ultimo-shine.png"
 import premium_acrylic_emulsion from "../../assets/premium-acrylic-emulsion.png"
