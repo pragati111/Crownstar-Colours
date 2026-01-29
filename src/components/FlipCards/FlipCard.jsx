@@ -152,8 +152,8 @@ const FlipCards = () => {
   const cardRect = card.getBoundingClientRect();
 
   // center over the card
-  let left = cardRect.left + cardRect.width / 2 - chosenWidth / 2;
-  let top = cardRect.top + cardRect.height / 2 - chosenHeight / 2;
+  const left = cardRect.left + cardRect.width / 2 - chosenWidth / 2;
+  const top = cardRect.top + cardRect.height / 2 - chosenHeight / 2;
 
   // CLAMP so it never goes off-screen
   left = Math.max(8, Math.min(left, viewportWidth - chosenWidth - 8));
@@ -264,7 +264,7 @@ const FlipCards = () => {
 
       <div className="chosen" ref={chosenRef}>
         <div className="chosen__image">
-          <img ref={chosenImageRef} onClick={hideDetails} />
+          <img ref={chosenImageRef} alt="" onClick={hideDetails} />
         </div>
         <div className="chosen__details" ref={chosenDetailsRef}>
           <div className="chosen__details__name" ref={chosenNameRef}></div>
