@@ -15,16 +15,22 @@ const Reasons = () => {
         <img src={image4} alt="" />
       </div>
       <div className="right-r">
-        <span>some reasons</span>
         <div>
             <span className='stroke-text'>why</span>
             <span> choose us?</span>
         </div>
         <div className='details-r'>
+        <div><img src={tick} alt="" /><span>14+ years in Paint Industry</span></div>
+        <div><img src={tick} alt="" /><span>3000+ Projects Completed</span></div>
+        <div><img src={tick} alt="" /><span>Certified and Compliant Products</span></div>
+        
+
         <div><img src={tick} alt="" /><span>Best quality at low price</span></div>
         <div><img src={tick} alt="" /><span>Great products backed by a strong R&D</span></div>
         <div><img src={tick} alt="" /><span>Highest market warranty</span></div>
         <div><img src={tick} alt="" /><span>⁠Best coverage</span></div>
+
+        <div><img src={tick} alt="" /><span>Dedicated Customer Support</span></div>
         </div>
         {/*<span style={{color:"var(--gray)", fontWeight: "normal"}}>Our Certifications</span>
           <div className="partners">
