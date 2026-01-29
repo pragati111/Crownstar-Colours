@@ -148,14 +148,13 @@ const FlipCards = () => {
 
     let left, top;
 
-    if (isMobile) {
+if (isMobile) {
   const cardRect = card.getBoundingClientRect();
 
-  // center over the card
-  const left = cardRect.left + cardRect.width / 2 - chosenWidth / 2;
-  const top = cardRect.top + cardRect.height / 2 - chosenHeight / 2;
+  left = cardRect.left + cardRect.width / 2 - chosenWidth / 2;
+  top = cardRect.top + cardRect.height / 2 - chosenHeight / 2;
 
-  // CLAMP so it never goes off-screen
+  // Clamp to viewport
   left = Math.max(8, Math.min(left, viewportWidth - chosenWidth - 8));
   top = Math.max(8, Math.min(top, viewportHeight - chosenHeight - 8));
 
@@ -164,12 +163,11 @@ const FlipCards = () => {
     visibility: "visible",
     overflow: "hidden",
   });
-}else {
-      // Desktop: animate from center of grid
-      const boardRect = boardRef.current.getBoundingClientRect();
-      left = boardRect.left + boardRect.width / 2 - chosenRect.width / 2;
-      top = boardRect.top + boardRect.height / 2 - chosenRect.height / 2;
-    }
+} else {
+  const boardRect = boardRef.current.getBoundingClientRect();
+  left = boardRect.left + boardRect.width / 2 - chosenWidth / 2;
+  top = boardRect.top + boardRect.height / 2 - chosenHeight / 2;
+}
 
     gsap.set(chosenRef.current, {
       position: "fixed",
