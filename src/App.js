@@ -14,7 +14,6 @@ function App() {
     <div className="App">
       <Hero />  
       <VMV/>
-      <GlowSection/>
       <Programs/>
       <ProductRangeExtended/>
       <LabEquipments/>
