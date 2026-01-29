@@ -139,6 +139,7 @@ html, body {
 }
 
 .chosen__details__description {
+  white-space: pre-line;
   line-height: 1.5;
 }
 @media screen and (max-width: 768px) {

@@ -25,7 +25,7 @@ const users = [
     title: "Damp Proof Paint",
     details: {
       secondary: "",
-      text: "Excellent waterproofing solution that seals and waterproofs fine cracks and porous plaster",
+      text: "Excellent waterproofing solution that seals and waterproofs fine cracks and porous plaster,\nSolar Reflectance Index : 107,\nPercent Elongation : 300,\n7 years warranty",
       image: bucket_dpp // we can leave it empty or use a placeholder
     }
   },
@@ -46,14 +46,6 @@ const users = [
     }
   },
   {
-    title: "Wall POP",
-    details: {
-      secondary: "",
-      text: "Good adhesive strength forming protective base increasing durability of paints",
-      image: wall_pop
-    }
-  },
-  {
     title: "Wall Primer",
     details: {
       secondary: "",
@@ -65,7 +57,7 @@ const users = [
     title: "Ultimo Shine",
     details: {
       secondary: "",
-      text: "Radiates higher sheen with smooth silky finish and unique anti-bacterial shield for walls",
+      text: "Radiates higher sheen with smooth silky finish and unique anti-bacterial shield for walls,\nScratch Resistant,\nEquivalent to Royale Shine,\n8 yrs warranty",
       image: ultimo_shine
     }
   },
@@ -73,7 +65,7 @@ const users = [
     title: "Premium Acrylic Emulsion",
     details: {
       secondary: "",
-      text: "Gives rich matte finish and designed to prevent fungal growth on walls with durability",
+      text: "Gives rich matte finish and designed to prevent fungal growth on walls with durability,\nVarieties -- Matt and Gloss,\n5 yrs warranty",
       image: premium_acrylic_emulsion
     }
   },
@@ -81,7 +73,7 @@ const users = [
     title: "Heat Resistant Paint",
     details: {
       secondary: "",
-      text: "Ensures excellent heat protection, drop in room temperature & provides power saving benefits",
+      text: "Ensures excellent heat protection, drop in room temperature & provides power saving benefits,\nSRI value -- 110,\nBased on Nano Technology,\n7 yrs warranty",
       image: heat_resistant_paint
     }
   },
@@ -89,7 +81,7 @@ const users = [
     title: "UV Paint for Exterior",
     details: {
       secondary: "",
-      text: "Protects against sunlight and rain water degradation with thermal barrier technology",
+      text: "Protects against sunlight and rain water degradation with thermal barrier technology,\nVarities - Matt and Finish,\nScratch Resistant,\nUV protection",
       image: uv_paint_for_exterior
     }
   },
@@ -97,7 +89,7 @@ const users = [
     title: "Acrylic Bond Distemper",
     details: {
       secondary: "",
-      text: "Wide coverage area ensuring good opacity and delivers tough durable economical interior solutions",
+      text: "Wide coverage area ensuring good opacity and delivers tough durable economical interior solutions,\n2 yrs warranty",
       image: acrylic_bond_distemper
     }
   },
