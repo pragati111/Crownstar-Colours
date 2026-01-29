@@ -15,7 +15,6 @@ import uv_paint_for_exterior from "../../assets/uv-paint-for-exterior.png"
 import acrylic_bond_distemper from "../../assets/acrylic-bond-distemper.png"
 import floor_coating from "../../assets/floor-coating.png"
 import synthetic_enamel from "../../assets/synthetic-enamel.png"
-import owl from "../../assets/owl.png"
 
 gsap.registerPlugin(Flip);
 
