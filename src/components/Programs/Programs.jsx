@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './Programs.css'
-import {programsData} from '../../data/programsData'
-import RightArrowImg from '../../assets/rightArrow.png'
 import FlipCards from '../FlipCards/FlipCard'
 const Programs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,10 +29,7 @@ const Programs = () => {
       <span>Product Range</span>
     </div>
 
-    {/* Cards */}
-    <div >
-      <FlipCards />
-    </div>
+    <FlipCards/>
   </div>
 );
 

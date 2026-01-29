@@ -31,8 +31,8 @@ const Hero = () => {
                 
             </div>
             <div>
-                <span>
-                    Crown Star Colours delivers world-class paints, primers, and decorative products with superior quality and innovation
+                <span className='after-hero-text'>
+                    Crown Star Colours delivers world-class paints, primers, and decorative products with superior quality and innovation!
                 </span>
             </div>
         </div>

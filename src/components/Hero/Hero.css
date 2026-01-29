@@ -18,8 +18,8 @@
 }
 
 .the-best-ad{
-    margin-top: 4rem;
-    background-color: #FFF3F0;
+    margin-top: 5rem;
+    background-color: white;
     border-radius: 4rem;
     width:fit-content;
     padding: 20px 13px;
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: flex-start;
     animation: fadeInUp 0.6s ease-out 0.1s both;
-    border: 2px solid #F1DAB2;
+    border: 2px solid #B4EBE6;
 }
 
 .the-best-ad span{
@@ -39,7 +39,7 @@
 
 .the-best-ad>div{
     position: absolute;
-    background-color:#F1DAB2;
+    background-color: #B4EBE6;
     width: 5.4rem;
     height: 80%;
     left: 8px;
@@ -57,6 +57,10 @@
     color: black;
     text-overflow: inherit;
     animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.after-hero-text{
+    font-size: large;
 }
 
 .hero-text>div:nth-of-type(3){
@@ -201,7 +205,7 @@
         width: 14rem;
     }
     .the-best-ad{
-        margin-top: 0;
+        margin-top: 4rem;
         font-size: small;
         align-self: center;
         transform: scale(0.8);
