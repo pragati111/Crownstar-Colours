@@ -149,7 +149,6 @@ const FlipCards = () => {
     let left, top;
 
 if (isMobile) {
-  if (isMobile) {
     const horizontalOffset = 50; // px → move right (adjust as you like)
 
 left = (viewportWidth - chosenWidth) / 2 + horizontalOffset;
@@ -162,7 +161,6 @@ left = (viewportWidth - chosenWidth) / 2 + horizontalOffset;
     visibility: "visible",
     overflow: "hidden",
   });
-}
 
 } else {
   const boardRect = boardRef.current.getBoundingClientRect();
