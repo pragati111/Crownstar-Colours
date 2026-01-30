@@ -7,13 +7,13 @@ import Footer from './components/Footer/Footer';
 import VMV from './components/VMV/VMV';
 import LabEquipments from './components/LabEquipments/LabEquipments';
 import ProductRangeExtended from './components/ProductRangeExtended/ProductRangeExtended';
-
+import ProductShowcase from './components/ProductShowcase/ProductShowcase';
 function App() {
   return (
     <div className="App">
       <Hero />  
       <VMV/>
-      <Programs/>
+      <ProductShowcase/>
       <ProductRangeExtended/>
       <LabEquipments/>
       <Reasons/>
