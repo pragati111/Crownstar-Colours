@@ -32,9 +32,31 @@
     color: black;
 }
 
+.header-menu li {
+  position: relative;
+  padding: 0.4rem 0.8rem;
+
+  background-color: white;
+  border-radius: 6px;
+
+  color: black;
+  font-weight: 500;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
+  transition: all 0.3s ease;
+}
+
+.header-menu li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
 
 .header-menu li:hover{
-    color:var(--orange);
+    background-color: #ffffff;
+  color: var(--orange);
+  transform: translateY(-2px);
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
@@ -62,5 +84,11 @@
 
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     z-index: 1000;
+  }
+  .header-menu li {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0.5rem 0;
+    border-radius: 0;
   }
 }
