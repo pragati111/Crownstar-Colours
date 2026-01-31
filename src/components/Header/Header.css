@@ -25,6 +25,7 @@
 }
 
 .header-menu{
+    margin-right: 5rem;
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -47,6 +48,7 @@
   }
 
   .header-menu{
+    margin-right: 0rem;
     position: fixed;
     top: 4.5rem;           /* just below header */
     right: 1rem;

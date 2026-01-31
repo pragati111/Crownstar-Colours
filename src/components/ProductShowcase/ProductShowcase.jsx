@@ -106,7 +106,7 @@ const users = [
 
 const ProductShowcase = () => {
   return (
-    <div className="product-showcase">
+    <div className="product-showcase" id="product-showcase">
       {users.map((item, index) => (
         <div className="product-row" key={index}>
           
