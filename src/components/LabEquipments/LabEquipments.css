@@ -11,9 +11,12 @@
 }
 
 .lab-title {
-  font-size: 2.4rem;
-  margin: 0.5rem 0 3rem;
-  color: #102a43;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  color: black;
+  font-style: italic;
 }
 
 .lab-grid {
@@ -90,6 +93,15 @@
     overflow: hidden;
     height: 470px;
  
+  }
+
+  .lab-title{
+    font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  color: black;
+  font-style: italic;
   }
 
 }

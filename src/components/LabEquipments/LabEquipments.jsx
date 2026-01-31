@@ -24,7 +24,7 @@ const LabEquipments = () => {
   return (
     <div className="lab-container" id="lab-container">
       <span className="lab-subtitle">Quality Assurance</span>
-      <h2 className="lab-title">Our Major Lab Equipments</h2>
+      <h2 className="lab-title">OUR MAJOR LAB EQUIPMENTS</h2>
 
       <div className="lab-animation">
         <RotatingCards equipments={equipments} />
