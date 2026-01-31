@@ -9,6 +9,15 @@
   align-items: center;
 }
 
+.vmv-subtitle {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  color: black;
+  font-style: italic;
+}
+
 /* One product row */
 .product-row {
   display: flex;
