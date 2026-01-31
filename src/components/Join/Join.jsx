@@ -18,10 +18,10 @@ const Join = () => {
         </div>
         <div className="right-j">
           <div className="email-container">
-            <span className="email-text">sales@crownstarcolors.com</span>
+            <span className="email-text">sales@crownstarcolors.in</span>
 
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@crownstarcolors.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@crownstarcolors.in"
               target="_blank"
               rel="noopener noreferrer"
               className="mail-icon-link"

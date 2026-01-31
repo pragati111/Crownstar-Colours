@@ -6,7 +6,7 @@ import { VisionIcon, MissionIcon, ValuesIcon } from '../../icons'
 const VMV = () => {
   return (
     <div className="vmv-container">
-      <span className="vmv-subtitle">OUR FOUNDATION</span>
+      <span className="abc">OUR FOUNDATION</span>
       <br />
       <br />
       <br />

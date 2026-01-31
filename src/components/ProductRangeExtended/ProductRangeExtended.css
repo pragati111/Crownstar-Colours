@@ -91,6 +91,14 @@
     grid-template-columns: 1fr; /* single centered column */
     max-width: 100%;
   }
+  .product-range-container .product-title {
+  font-size: 2rem;   /* bigger */
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+  color: #000000;      /* force black */
+  font-style: italic;
+}
 }
 
 
